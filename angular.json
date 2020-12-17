@@ -119,6 +119,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "diretivas04"
+    }
+  },
+  "defaultProject": "diretivas04",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
