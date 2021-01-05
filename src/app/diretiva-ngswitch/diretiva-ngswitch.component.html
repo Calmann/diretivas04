@@ -1,0 +1,22 @@
+<p>diretiva-ngswitch works!</p>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active"
+        [class.active]="aba == 'home'"
+        (click)="aba = 'home'">Home</a>
+        <a class="nav-item nav-link"
+        [class.active]="aba == 'mapa'"
+        (click)="aba = 'mapa'">Mapa</a>
+        <a class="nav-item nav-link"
+        [class.active]="aba == 'lista'"
+        (click)="aba = 'lista'">Lista</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" [ngSwitch]="aba">
+    <p *ngSwitchCase="'mapa'">Modo Mapa Ativado</p>
+    <p *ngSwitchCase="'lista'">Modo Lista Ativado</p>
+    <p *ngSwitchDefault>Home</p>
+  </div>
