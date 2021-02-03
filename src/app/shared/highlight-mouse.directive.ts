@@ -1,7 +1,7 @@
 import { Directive, HostListener, HostBinding } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlightMouse]'
+  selector: '[highlightMouse]'
 })
 export class HighlightMouseDirective {
 
