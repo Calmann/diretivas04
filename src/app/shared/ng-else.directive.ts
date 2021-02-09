@@ -11,7 +11,7 @@ export class NgElseDirective {
     } else {
       this.viewContainerRef.clear();
     }
-  };
+  }
 
   constructor(
     private templateRef: TemplateRef<any>,
